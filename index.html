@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contas Valorant Premium | Discord Exclusivo</title>
+    <title>Contas Valorant Premium | Entrega Imediata</title>
     
     <!-- Meta Pixel Code -->
     <script>
@@ -26,15 +26,16 @@
 
     <style>
         :root {
-            --cor-primaria: #5865F2; /* Roxo Discord */
-            --cor-secundaria: #0e0e0e;
+            --cor-primaria: #ff4655; /* Vermelho Valorant */
+            --cor-secundaria: #0a0a12;
             --cor-texto: #ffffff;
-            --gradiente-valorant: linear-gradient(45deg, #ff4655, #5865F2);
+            --gradiente-valorant: linear-gradient(45deg, #ff4655, #0f1923);
         }
         
         body {
             font-family: 'Poppins', sans-serif;
-            background: var(--cor-secundaria);
+            background: var(--cor-secundaria) url('https://i.imgur.com/KbT7B9A.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: var(--cor-texto);
             margin: 0;
             padding: 0;
@@ -50,17 +51,20 @@
             max-width: 800px;
             padding: 2rem;
             margin: 2rem;
-            background: rgba(20, 20, 20, 0.9);
+            background: rgba(10, 10, 18, 0.85);
             border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 70, 85, 0.2);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 1rem;
             background: var(--gradiente-valorant);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(255, 70, 85, 0.3);
         }
 
         h2 {
@@ -75,11 +79,22 @@
             opacity: 0.9;
         }
 
+        .hero-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 70, 85, 0.3);
+        }
+
         .video-container {
             margin: 2rem 0;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 70, 85, 0.3);
         }
 
         .video-container iframe {
@@ -92,53 +107,65 @@
             display: inline-block;
             background: var(--cor-primaria);
             color: white;
-            padding: 15px 40px;
-            border-radius: 50px;
+            padding: 16px 45px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4);
+            box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
             margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
         }
 
         .btn-discord:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(88, 101, 242, 0.6);
-            background: #4752c4;
+            box-shadow: 0 8px 25px rgba(255, 70, 85, 0.6);
+            background: #e03c4c;
         }
 
-        .benefits {
+        .agents-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 1rem;
             margin: 2rem 0;
         }
 
-        .benefit-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1.5rem;
-            border-radius: 10px;
+        .agent {
             flex: 1;
-            min-width: 200px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 120px;
+            filter: drop-shadow(0 0 10px rgba(255, 70, 85, 0.5));
+            transition: transform 0.3s ease;
+        }
+
+        .agent:hover {
+            transform: scale(1.1);
         }
 
         /* Responsivo */
         @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
+            h1 { font-size: 2.2rem; }
             h2 { font-size: 1.5rem; }
             .container { padding: 1.5rem; }
             .video-container iframe { height: 250px; }
+            .agents-container { flex-wrap: wrap; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Contas Valorant Premium</h1>
-        <p>Garantia de 7 dias | Entrega imediata | Suporte 24h</p>
+        <h1>CONTAS VALORANT PRÉMIUM</h1>
+        <p>Entrega imediata após a confirmação do pagamento</p>
         
+        <!-- Imagem das Agentes -->
+        <div class="agents-container">
+            <img src="https://i.imgur.com/Jett.png" alt="Jett" class="agent">
+            <img src="https://i.imgur.com/Reyna.png" alt="Reyna" class="agent">
+        </div>
+
+        <!-- Vídeo -->
         <div class="video-container">
             <iframe 
                 src="https://www.youtube.com/embed/-SKbcHvMSHY" 
@@ -148,25 +175,11 @@
             </iframe>
         </div>
 
-        <h2>Por que comprar conosco?</h2>
-        
-        <div class="benefits">
-            <div class="benefit-item">
-                <h3>🔒 Segurança</h3>
-                <p>Contas verificadas e sem risco de banimento</p>
-            </div>
-            <div class="benefit-item">
-                <h3>⚡ Entrega Rápida</h3>
-                <p>Receba os dados em menos de 5 minutos</p>
-            </div>
-            <div class="benefit-item">
-                <h3>🛡️ Garantia</h3>
-                <p>Reembolso em até 7 dias se não gostar</p>
-            </div>
-        </div>
+        <h2>JOGUE COM AS MELHORES SKINS</h2>
+        <p>Contas com Vandal Reaver, Operator Ion e muito mais!</p>
 
         <a href="https://discord.gg/QtWMkCQCU5" class="btn-discord" target="_blank">
-            ENTRAR NO DISCORD AGORA
+            GARANTA SUA CONTA AGORA
         </a>
     </div>
 </body>
