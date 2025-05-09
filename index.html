@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contas Valorant Premium | Entrega Imediata</title>
+    <title>Contas Valorant Premium | Entrega Imediata 24h</title>
     
     <!-- Meta Pixel Code -->
     <script>
@@ -26,17 +26,16 @@
 
     <style>
         :root {
-            --cor-primaria: #ff4655; /* Vermelho Valorant */
-            --cor-secundaria: #0a0a12;
-            --cor-texto: #ffffff;
-            --gradiente-valorant: linear-gradient(45deg, #ff4655, #0f1923);
+            --vermelho: #ff4655;
+            --roxo: #8a4fff;
+            --fundo: #0f1923;
+            --texto: #ffffff;
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background: var(--cor-secundaria) url('https://i.imgur.com/KbT7B9A.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: var(--cor-texto);
+            font-family: 'Arial', sans-serif;
+            background: var(--fundo);
+            color: var(--texto);
             margin: 0;
             padding: 0;
             display: flex;
@@ -44,49 +43,28 @@
             align-items: center;
             min-height: 100vh;
             text-align: center;
-            line-height: 1.6;
         }
 
         .container {
             max-width: 800px;
             padding: 2rem;
-            margin: 2rem;
-            background: rgba(10, 10, 18, 0.85);
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 70, 85, 0.2);
+            margin: 1rem;
+            background: rgba(20, 20, 30, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 70, 85, 0.2);
+            border: 1px solid var(--vermelho);
         }
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
-            background: var(--gradiente-valorant);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 10px rgba(255, 70, 85, 0.3);
+            color: var(--vermelho);
+            text-shadow: 0 2px 5px rgba(255, 70, 85, 0.3);
         }
 
-        h2 {
-            font-size: 1.8rem;
-            margin: 2rem 0 1rem;
-            color: #ff4655;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .hero-image {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin: 1rem 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            border: 2px solid rgba(255, 70, 85, 0.3);
+        .destaque {
+            color: var(--roxo);
+            font-weight: bold;
         }
 
         .video-container {
@@ -94,7 +72,6 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            border: 2px solid rgba(255, 70, 85, 0.3);
         }
 
         .video-container iframe {
@@ -103,69 +80,53 @@
             border: none;
         }
 
-        .btn-discord {
-            display: inline-block;
-            background: var(--cor-primaria);
-            color: white;
-            padding: 16px 45px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
-            margin-top: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: none;
-        }
-
-        .btn-discord:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 70, 85, 0.6);
-            background: #e03c4c;
-        }
-
-        .agents-container {
+        .beneficios {
             display: flex;
             justify-content: center;
             gap: 1rem;
             margin: 2rem 0;
+            flex-wrap: wrap;
         }
 
-        .agent {
-            flex: 1;
-            max-width: 120px;
-            filter: drop-shadow(0 0 10px rgba(255, 70, 85, 0.5));
-            transition: transform 0.3s ease;
+        .beneficio {
+            background: rgba(255, 70, 85, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--roxo);
+            min-width: 200px;
         }
 
-        .agent:hover {
-            transform: scale(1.1);
+        .btn-discord {
+            display: inline-block;
+            background: var(--roxo);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            margin-top: 1rem;
         }
 
-        /* Responsivo */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.5rem; }
-            .container { padding: 1.5rem; }
+        .btn-discord:hover {
+            background: var(--vermelho);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
             .video-container iframe { height: 250px; }
-            .agents-container { flex-wrap: wrap; }
+            .beneficios { flex-direction: column; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>CONTAS VALORANT PRÉMIUM</h1>
-        <p>Entrega imediata após a confirmação do pagamento</p>
+        <h1>CONTAS VALORANT <span class="destaque">PREMIUM</span></h1>
+        <p style="font-size: 1.2rem;">Entrega <span class="destaque">automática e imediata</span> | Loja 24h</p>
         
-        <!-- Imagem das Agentes -->
-        <div class="agents-container">
-            <img src="https://i.imgur.com/Jett.png" alt="Jett" class="agent">
-            <img src="https://i.imgur.com/Reyna.png" alt="Reyna" class="agent">
-        </div>
-
-        <!-- Vídeo -->
         <div class="video-container">
             <iframe 
                 src="https://www.youtube.com/embed/-SKbcHvMSHY" 
@@ -175,12 +136,28 @@
             </iframe>
         </div>
 
-        <h2>JOGUE COM AS MELHORES SKINS</h2>
-        <p>Contas com Vandal Reaver, Operator Ion e muito mais!</p>
+        <div class="beneficios">
+            <div class="beneficio">
+                <h3>⚡ ENTREGA IMEDIATA</h3>
+                <p>Receba os dados da conta em até 3 minutos após o pagamento</p>
+            </div>
+            <div class="beneficio">
+                <h3>🤖 AUTOMATIZADO 24H</h3>
+                <p>Compre a qualquer hora, mesmo de madrugada</p>
+            </div>
+            <div class="beneficio">
+                <h3>🔒 GARANTIA REAL</h3>
+                <p>Contas verificadas e prontas para jogar</p>
+            </div>
+        </div>
 
         <a href="https://discord.gg/QtWMkCQCU5" class="btn-discord" target="_blank">
-            GARANTA SUA CONTA AGORA
+            COMPRAR AGORA NO DISCORD
         </a>
+        
+        <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+            ⚠️ Acesso vitalício | Suporte via Discord | Pagamento por PIX ou Cartão
+        </p>
     </div>
 </body>
 </html>
